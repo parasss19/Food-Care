@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-color: rgba(2, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    line-height: 64px;
+    text-transform: uppercase;
+}
+
+article {
+    margin: auto;
+    max-width: 850px;
+    padding: 8px;
+    padding-top: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-vid {
+    max-width: 100%;
+  }iframe {
+    margin: 50px 0;
+    max-width: 100%;
+}
+
+#content {
+    max-width: 680px;
+    margin: auto;
+}
+
+#content span{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 34px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#content p {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#content img{
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 52px;
+    margin: 0;
+    letter-spacing: 1.3px;
+    line-height: 58px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: purple;
+    font-size: 18px;
+}
+
+

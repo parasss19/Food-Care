@@ -1,0 +1,980 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* for smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+/*^^^^^^^^^^^^^^^^^ NAVBAR DESIGN START ^^^^^^^^^^^^^^^^^^^^^^^*/
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 80px;
+    background: rgba(248, 202, 202, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    padding: 5px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 27px 0 0;
+}
+
+header nav ul li a {
+    color: rgb(11, 11, 11);
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 0.37px;
+    margin: 0 22px 0 0;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+
+    /* for underline */
+    display: inline-block;
+    position: relative;
+    color: #070707;
+}
+
+/* for underline(start) */
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #535352;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+header nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* for underline (end) */
+
+
+header nav ul li:last-of-type a {
+    margin-right: 0px;
+}
+
+/*^^^^^^^^^^^^^^^^^6 NAVBAR DESIGN END ^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+
+
+/*^^^^^^^^^^^^^^^^^ HERO SECTION DESIGN START ^^^^^^^^^^^^^^^^^^^^^^^*/
+section .hero {
+
+    position: relative;
+}
+
+section.hero img {
+    width: 100%;
+    height: 750px;
+    margin-bottom: 30px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-content .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-top: 5px;
+}
+
+.container h1 {
+    padding: 20px 0;
+    font-size: 50px;
+    max-width: 304px;
+    margin: 0 0 16px 0;
+    color: rgba(6, 0, 0, 0.9);
+}
+
+.hero-content p {
+    max-width: 505px;
+    height: 80px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: rgb(4, 3, 3);
+    margin-bottom: 19px;
+    margin-top: 0;
+    text-align: justify;
+}
+
+.hero-content button {
+    font-weight: 700;
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    background: #e7500f;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-content button:hover {
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid #3E50E5;
+}
+
+/*^^^^^^^^^^^^^^^^^ HERO SECTION DESIGN END ^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+
+
+/* ^^^^^^^^^^^^^^^^^^^^ ABOUT US ^^^^^^^^^^^^^^^^^^^^^ */
+
+.about-container {
+    width: 90%;
+    padding: 70px 0;
+    margin: auto;
+    height: 300px;
+    text-align: center;
+}
+
+.global-page-container {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*  STYLE ABOUT US TITLE (START) */
+#about-us {
+    text-align: center;
+}
+
+#about-us h3 {
+    font-size: 37px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    color: #424143;
+    text-transform: uppercase;
+}
+
+#about-us hr {
+    text-align: center;
+    margin: auto;
+    width: 40px;
+    border: solid 2px #E94F37;
+}
+
+/*  STYLE ABOUT US TITLE (END) */
+
+
+
+/* just for space between element  */
+.space {
+    margin: 20px 0;
+}
+
+
+
+/*  STYLE ABOUT US CONTENT (START) */
+.box-tabs {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.tab-box {
+    display: inline-block;
+    margin: auto;
+    font-size: 0;
+    background-color: #2A2D34;
+    color: white;
+}
+
+.box-tabs {
+    text-align: left;
+    background-color: #646872;
+}
+
+.single-tab {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: inline-block;
+    padding: 0 40px;
+    height: 70px;
+    line-height: 70px;
+}
+
+.tab-box #box-text {
+    text-align: left;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/*  STYLE ABOUT US CONTENT (START) */
+
+
+
+
+
+/*^^^^^^^^ HOW WE TACKLE START^^^^^^^^^^^^^ */
+section.cards {
+    padding: 110px 0;
+}
+
+.cards-heading h2 {
+    font-size: max(2.5rem, min(8vw, 4.875rem));
+    line-height: 1.0256410256;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cards-heading p {
+    line-height: 2;
+    color: #333;
+    font-size: max(0.7rem, min(3.2vw, 1.125rem));
+    line-height: 1.625;
+    margin: 0 0 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*^^^^^^^^ HOW WE TACKLE END ^^^^^^^^^^^^^ */
+
+
+
+
+
+.cards-container {
+    width: 95%;
+    margin: auto;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid red;
+    background-image: url("images/edmund-lou-dcPThE8G59E-unsplash.jpg");
+    background-size: cover;
+}
+
+.card {
+    width: 360px;
+    height: 400px;
+    margin: 10px 10px;
+    padding: 20px 0;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+}
+
+.text {
+    text-align: center;
+    margin-top: 170px;
+    font-size: 22px;
+    padding: 10px 16px;
+    color: white;
+    text-align: justify;
+}
+
+.text h2 {
+    margin: 8px;
+}
+
+
+
+
+/*^^^^^^^^^^^^^^^^^ CARDS 1 START ^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/* ^^^^^^^^^^^^^^^^ Polaroid Start^^^^^^^^^^^^^^ */
+.polaroid1 {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    border: rgba(11, 1, 1, 0.8);
+}
+
+.polaroid1 img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.desp p {
+    text-align: center;
+    padding: 9px 12px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* ^^^^^^^^^^^^^^^^ Polaroid End^^^^^^^^^^^^^^ */
+
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^ Overlays Section Start ^^^^^^^^^^^^^^^^^^^^^^^^ */
+.card1 {
+    position: relative;
+    width: 50%;
+}
+
+.overlay1 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    border-radius: 15px;
+    transition: bottom .5s ease-in-out, opacity 1s ease-in-out;
+
+}
+
+.image1 {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.card1:hover .overlay1 {
+    bottom: 0;
+    height: 100%;
+}
+
+.overlay1 button {
+    font-weight: 700;
+    font-size: 15px;
+    height: 35px;
+    width: 140px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    background: #f8a17c;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.overlay1 button:hover {
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid #3E50E5;
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^ Overlays Section END ^^^^^^^^^^^^^^^^^^^^^^^^6 */
+/*^^^^^^^^^^^^^^^^^ CARDS 1  END ^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+
+
+/*^^^^^^^^^^^^^^^^^ CARDS 2  START ^^^^^^^^^^^^^^^^^^^^^^^*/
+/* ^^^^^^^^^^^^^^^^ Polaroid Start^^^^^^^^^^^^^^ */
+.polaroid2 {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    border: rgba(11, 1, 1, 0.8);
+}
+
+.polaroid2 img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.desp2 p {
+    text-align: center;
+    padding: 9px 12px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ^^^^^^^^^^^^^^^^ Polaroid End^^^^^^^^^^^^^^ */
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^ Overlays Section Start ^^^^^^^^^^^^^^^^^^^^^^^^6 */
+.card2 {
+    position: relative;
+    width: 50%;
+}
+
+.overlay2 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(10, 10, 10, 0.3);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: bottom .5s ease-in-out, opacity 1s ease-in-out;
+    border-radius: 13px;
+}
+
+.image2 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card2:hover .overlay2 {
+    bottom: 0;
+    height: 100%;
+}
+
+.overlay2 button {
+    font-weight: 700;
+    font-size: 15px;
+    height: 35px;
+    width: 140px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    background: #f8a17c;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.overlay2 button:hover {
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid #3E50E5;
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^ Overlays Section End ^^^^^^^^^^^^^^^^^^^^^^^^6 */
+/*^^^^^^^^^^^^^^^^^ CARDS 2  END ^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+
+
+
+/*^^^^^^^^^^^^^^^^^ CARDS 3  START ^^^^^^^^^^^^^^^^^^^^^^^*/
+/* ^^^^^^^^^^^^^^^^ Polaroid Start^^^^^^^^^^^^^^ */
+.polaroid3 {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    border: rgba(11, 1, 1, 0.8);
+}
+
+.polaroid3 img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.desp3 p {
+    text-align: center;
+    padding: 9px 12px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ^^^^^^^^^^^^^^^^ Polaroid End^^^^^^^^^^^^^^ */
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^ Overlays Section Start ^^^^^^^^^^^^^^^^^^^^^^^^6 */
+.card3 {
+    position: relative;
+    width: 50%;
+}
+
+.overlay3 {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(10, 10, 10, 0.3);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: bottom .5s ease-in-out, opacity 1s ease-in-out;
+    border-radius: 13px;
+}
+
+.image3 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card3:hover .overlay3 {
+    bottom: 0;
+    height: 100%;
+}
+
+.overlay3 button {
+    font-weight: 700;
+    font-size: 15px;
+    height: 35px;
+    width: 140px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    background: #f8a17c;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.overlay3 button:hover {
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid #3E50E5;
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^ Overlays Section End ^^^^^^^^^^^^^^^^^^^^^^^^6 */
+/*^^^^^^^^^^^^^^^^^ CARDS 3  END ^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+
+
+
+
+
+/* ^^^^^^^^^^^^^^^^^ food form Design (START) ^^^^^^^^^^^^^^^^^^ */
+section.food-form {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+    border: 1px solid red;
+    height: 630px;
+    background: rgba(241, 121, 121, 0.7);
+    background-image: url("images/helping\ hands.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#form-heading h3 {
+    width: 60%;
+    margin: auto;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    color: #fdfbff;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#form-heading hr {
+    text-align: center;
+    margin: auto;
+    width: 190px;
+    border: solid 2px #eeeeee;
+}
+
+#form-heading p {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 7px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+.food-container {
+    position: absolute;
+    width: 40%;
+    margin: 12px 330px;
+    padding: 12px;
+    background: rgba(214, 210, 210, 0.4);
+    border-radius: 20px;
+    height: 440px;
+}
+
+.food-container form {
+    height: 420px;
+    padding: 14px 0;
+}
+
+.food-container input {
+    appearance: none;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    height: 2.3125rem;
+    margin: 0px 0px 0rem;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.food-container textarea {
+    appearance: none;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.875rem;
+    height: 2.3125rem;
+    margin: 0px 0px 0rem;
+    padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+
+    height: 100px;
+    resize: none;
+}
+
+#submit_form {
+    background: rgba(252, 244, 244, 0.4);
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#submit_form:hover {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+/* ^^^^^^^^^^^^^^^^^ food form Design (END) ^^^^^^^^^^^^^^^^^^ */
+
+
+
+
+
+/* ^^^^^^^^^^^^^^^^^ QR code (start) ^^^^^^^^^^^^^^^^^^ */
+.qrcontainer img {
+    width: 200px;
+    height: 200px;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    margin-right: 70px;
+}
+
+.qrcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrcontainer p{
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.qrcontainer span{
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ^^^^^^^^^^^^^^^^^ QR code (End) ^^^^^^^^^^^^^^^^^^ */
+
+
+
+
+
+
+
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^ VOLUNTEER FORM (START) ^^^^^^^^^^^^^^^^^^^^^^^^^ */
+section.volunteer {
+    height: 540px;
+    padding: 60px 0;
+    /* border: 1px solid red; */
+}
+
+
+/* ^^^^^^^^^^^ volunteer heading (start)^^^^^^^^^^^^^ */
+#vol {
+    text-align: center;
+}
+
+#vol h3 {
+    font-size: 37px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    color: #424143;
+    text-transform: uppercase;
+}
+
+#vol hr {
+    text-align: center;
+    margin: auto;
+    width: 190px;
+    border: solid 2px #E94F37;
+}
+
+/* ^^^^^^^^^^^ volunteer heading (End)^^^^^^^^^^^^^ */
+
+.space-class {
+    margin: 14px 0;
+}
+
+
+#vol-content {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(55, 55, 54, 0.3) -10px 10px, rgba(96, 95, 95, 0.2) -15px 15px, rgba(130, 133, 133, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.left img {
+    margin-top: 9px;
+    height: 395px;
+    width: 600px;
+}
+
+
+.right {
+    margin-left: 70px;
+    width: 350px;
+}
+
+.right p {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 7px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.right span {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 103px;
+}
+
+
+.right a {
+    text-decoration: none;
+    /* removed the underline jo join us m arri thi */
+}
+
+.button-56 {
+    margin: 40px 101px;
+    width: 140px;
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 40px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-56:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button-56:hover:after {
+    transform: translate(0, 0);
+}
+
+.button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+.button-56:hover {
+    outline: 0;
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^ VOLUNTEER FORM (END) ^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+
+
+
+
+
+/* ^^^^^^^^^^^^^^^^^^^ NGO section (start) ^^^^^^^^^^^^^^^^^^^ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ^^^^^^^^^^^^^^^^^^^ FOOTER (START) ^^^^^^^^^^^^^^^^^^^^^ */
+footer.footer {
+    width: 100%;
+    background-color: #2A2D34;
+    overflow-wrap: break-word;
+    height: 290px;
+    margin-top: 80px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 39px 10px;
+}
+
+.address p {
+    color: #FFF;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.time p {
+    color: #FFF;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-section-title {
+    color: #f7e6fb;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 7px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .copyright {
+    margin-top: 23px;
+    height: 44px;
+    line-height: 44px;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.copyright hr {
+    max-width: 850px;
+    margin: 0 200px;
+    display: block;
+}
+
+/* ^^^^^^^^^^^^^^^^^^^ FOOTER (END) ^^^^^^^^^^^^^^^^^^^^^ */

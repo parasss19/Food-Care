@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+header h1 {
+    background-color: rgba(6, 5, 5, 0.8);
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    line-height: 74px;
+    padding: 10px 0;
+    height:100px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+article {
+    margin: auto;
+    max-width: 850px;
+    padding: 8px;
+    padding-top: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#content {
+    max-width: 680px;
+    margin: auto;
+}
+
+#content span{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 34px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+#content p {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#content img{
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    padding: 15px 0;
+}
+
+h1 {
+    font-size: 52px;
+    margin: 0;
+    letter-spacing: 1.3px;
+    line-height: 58px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: purple;
+    font-size: 18px;
+}
+
+
